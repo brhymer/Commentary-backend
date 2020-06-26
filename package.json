@@ -1,0 +1,17 @@
+{
+  "name": "alum-proj-backend",
+  "version": "1.0.0",
+  "description": "Tutor Marketplace is an app that connects students with teachers to facilitate online learning.  It is free to join and create your profile, so you pay nothing until you find the lesson that you're looking for. Users can log in as students or as teachers, and their profile and functions will vary depending on which.  Teachers can add lessons and availability, while students can select teachers and lessons. All lessons are currently one-on-one.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
