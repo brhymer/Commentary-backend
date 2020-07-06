@@ -9,10 +9,14 @@ const CommentSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
+    postId: {
+        type: mongoose.Schema.Types.ObjectId, ref: "Post",
+        required: true
+    },
     userId: [{
         type: mongoose.Schema.Types.ObjectId, ref: "User"
     }]
 });
 
-const Comment = mongoose.model('comment', CommentSchema);
+const Comment = mongoose.model('Comment', CommentSchema);
 module.exports = Comment;
