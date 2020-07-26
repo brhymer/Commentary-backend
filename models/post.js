@@ -11,14 +11,18 @@ const PostSchema = new mongoose.Schema({
     },
     rating: {
         type: Number,
-        required: true
+        // required: true
     },
     userId: [{
         type: mongoose.Schema.Types.ObjectId, ref: "User"
     }],
     comments: {
         type: Number
-    }
+    },
+    imgUrl: {
+        type: String,
+    },
+    imgPublicId: String
 });
 
 const Post = mongoose.model('Post', PostSchema);
